@@ -3,9 +3,9 @@
 The Contact Assistant Program is a simple program that allows users to manage contacts. Users can add, edit, search, view, delete, or delete all contacts within this application.
 
 ## Created By:
-Putu Arya Dharma Kesuma
-Gede Eka Putra Wijaya
-Gagas Pradipta Jatmiko
+1. Putu Arya Dharma Kesuma.
+2. Gede Eka Putra Wijaya.
+3. Gagas Pradipta Jatmiko.
 
 ## Features
 
