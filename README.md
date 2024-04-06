@@ -18,7 +18,7 @@ The Contact Assistant Program is a simple program that allows users to manage co
 
 ## How to Use
 
-1. Run the `program_kontak.c` program.
+1. Run the `program-contact-en.c` program.
 2. Choose the desired option from the main menu using the up and down arrow keys.
 3. Press the Enter key to select the highlighted option.
 4. Follow the on-screen instructions to add, edit, search, view, delete, or delete all contacts.
