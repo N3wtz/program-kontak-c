@@ -29,6 +29,7 @@ int main()
     system("COLOR 70");
     printf("\n|=======================================|");
     printf("\n|\t.::PROGRAM ASISTEN KONTAK::.\t|");
+    printf("\n|\t\tVersion 1.1\t\t|\n");
     printf("\n|\t\tcreated by:\t\t|");
     printf("\n|\t\tKELOMPOK 1\t\t|");
     printf("\n|\tS1 Teknik Informatika 2022\t|");
@@ -58,7 +59,7 @@ void menu()
     do
     {
         system("cls");
-        printf("\n============= Menu  Utama ==============\n");
+        printf("\n============= Menu  Utama ==============\n\n");
 
         // Mencetak menu dengan menandai pilihan saat ini
         for (int i = 1; i <= 7; i++)
@@ -172,7 +173,7 @@ void tambah()
     {
         FILE *td;
         td = fopen("data.txt", "a");
-        printf("\n========== Tambah  Kontak ==========\n\n");
+        printf("\n============ Tambah  Kontak ============\n\n");
 
         printf("  Nama: ");
         fflush(stdin);
@@ -198,7 +199,7 @@ void tambah()
         printf("\nBerhasil menambahkan kontak.....\n");
         fclose(td);
 
-        printf("(1)Tambah kontak lainnya   (0)Kembali ke menu utama\n ");
+        printf("[1] Tambah kontak lainnya\n[0] Kembali ke menu utama\n ");
         pilihan = getch();
         system("cls");
     } while (pilihan == '1');
@@ -212,7 +213,6 @@ void lihat()
     {
         FILE *td;
         td = fopen("data.txt", "r");
-
         printf("\n============= List Kontak ==============");
         while (fread(&data, sizeof(struct kontak), 1, td))
         {
@@ -229,7 +229,7 @@ void lihat()
 
         fclose(td);
 
-        printf("\n(0)Kembali ke menu utama\n ");
+        printf("\n[0] Kembali ke menu utama\n ");
         pilih = getch();
         system("cls");
     } while (pilih != '0');
@@ -281,7 +281,7 @@ void cari()
             }
         }
 
-        printf("\n(1)cari kontak lainnya   (0)Kembali ke menu utama\n ");
+        printf("\n[1] Cari kontak lainnya\n[0] Kembali ke menu utama\n ");
         pilihan = getch();
         fclose(td);
         system("cls");
@@ -302,6 +302,7 @@ void hapus()
 
         td = fopen("data.txt", "r");
         tdcopy = fopen("copy.txt", "w");
+        printf("\n============= Hapus Kontak =============\n");
         printf("Masukkan nama kontak yang akan dihapus : ");
         scanf("%[^\n]", &nakon);
         while (fread(&data, sizeof(struct kontak), 1, td))
@@ -330,7 +331,7 @@ void hapus()
             printf("\nNama kontak tidak ditemukan!\n");
         }
 
-        printf("\n(1)Hapus kontak lainnya   (0)Kembali ke menu utama\n ");
+        printf("\n[1] Hapus kontak lainnya\n[0] Kembali ke menu utama\n ");
         pilihan = getch();
         system("cls");
 
@@ -349,7 +350,8 @@ void hapussemua()
     char pilih;
     td = fopen("data.txt", "r");
     tdcopy = fopen("copy.txt", "w");
-    printf("Yakin hapus semua kontak? (y/n): ");
+    printf("\n========== Hapus Semua Kontak ==========\n");
+    printf("Yakin hapus semua kontak?\n[y] Hapus Semua Kontak\n[n] Batal\nPilihan: ");
     scanf(" %c", &pilih);
 
     if (pilih == 'y')
@@ -367,8 +369,8 @@ void hapussemua()
         remove("data.txt");
         rename("copy.txt", "data.txt");
 
-        printf("\nKontak berhasil dihapus.....\n");
-        printf("\n(0)Kembali ke menu utama\n ");
+        printf("\nSeluruh kontak berhasil dihapus.....\n");
+        printf("\n[0] Kembali ke menu utama\n ");
         scanf(" %c", &pilih);
         system("cls");
         if (pilih == '0')
@@ -440,7 +442,7 @@ void edit()
         {
             printf("\nNama kontak tidak ditemukan!");
         }
-        printf("\n(1)cari kontak lainnya   (0)Kembali ke menu utama\n ");
+        printf("\n[1]cari kontak lainnya\n[0]Kembali ke menu utama\n ");
         pilihan = getch();
         system("cls");
 
@@ -460,7 +462,7 @@ void garis()
 void keluar()
 {
     int i;
-    printf("=== Sekian Terimakasih ===\n\nMenutup aplikasi");
+    printf("=========== Sekian Terimakasih ===========\n\nMenutup aplikasi");
     char AppStarting[10] = ".....";
     for (i = 0; i < strlen(AppStarting); i++)
     {
