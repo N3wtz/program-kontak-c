@@ -71,25 +71,25 @@ void menu()
             switch (i)
             {
             case 1:
-                printf("[1] Tambah kontak\n");
+                printf("Tambah kontak\n");
                 break;
             case 2:
-                printf("[2] Edit kontak\n");
+                printf("Edit kontak\n");
                 break;
             case 3:
-                printf("[3] Cari kontak\n");
+                printf("Cari kontak\n");
                 break;
             case 4:
-                printf("[4] Lihat kontak\n");
+                printf("Lihat kontak\n");
                 break;
             case 5:
-                printf("[5] Hapus kontak\n");
+                printf("Hapus kontak\n");
                 break;
             case 6:
-                printf("[6] Hapus semua \n");
+                printf("Hapus semua \n");
                 break;
             case 7:
-                printf("[7] Keluar \n");
+                printf("Keluar [ESC] \n");
                 break;
             }
         }
