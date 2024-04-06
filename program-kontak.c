@@ -29,7 +29,8 @@ int main()
     system("COLOR 70");
     printf("\n|=======================================|");
     printf("\n|\t.::PROGRAM ASISTEN KONTAK::.\t|");
-    printf("\n|\t\tVersion 1.1\t\t|\n");
+    printf("\n|\t\tVersion 1.1\t\t|");
+    printf("\n|                                       |");
     printf("\n|\t\tcreated by:\t\t|");
     printf("\n|\t\tKELOMPOK 1\t\t|");
     printf("\n|\tS1 Teknik Informatika 2022\t|");
